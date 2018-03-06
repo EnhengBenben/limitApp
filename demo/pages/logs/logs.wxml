@@ -1,0 +1,9 @@
+<!--logs.wxml-->
+<view style='text-align: center'>
+  {{user.nickName}}
+</view>
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}.{{userInfo}}{{log}}</text>
+  </block>
+</view>

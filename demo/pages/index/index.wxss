@@ -1,0 +1,64 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #333;
+}
+
+.usermotto {
+  margin-top: 0px;
+}
+.slide-image{  
+    width: 100%;  
+}
+.search-box{
+  height: 70px;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+.search-box input{
+  width: calc(100% - 30px);
+  border: 1px solid #f0f0f0;
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 10px;
+  display: inline-block;
+  margin: 15px auto;
+  border-radius: 4px;
+  background-color: #FFF;
+  height: 38px;
+}
+.page-list-box{
+  width: calc(100% - 20px);
+  padding: 10px 0;
+  background-color: #FFF;
+  height: 100px;
+  display: flex;
+  flex-direction:row;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.page-list-box .section__ctn{
+  height: 105px;
+  width: 110px;
+}
+.page-list-box .section__ctn image{
+  width: 110px;
+  height: 85px;
+  background-color: #eeeeee;
+}
+.page-list-box .page-list-content{
+  width: calc(100% -160px);
+  padding-left: 10px;
+}

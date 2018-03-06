@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+      <block wx:for="{{imgUrls}}">  
+        <swiper-item>  
+           <navigator url="{{item.link}}" hover-class="navigator-hover">  
+            <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+           </navigator>   
+        </swiper-item>  
+      </block>  
+</swiper>
+<view class="container">
+<view class='search-box'>
+  <input type='text' name="search" placeholder='查找您喜欢的内容'/>
+</view>
+  <view class='page-list-box'>
+    <view class="section__ctn">
+        <image mode="top" src="../../images/icon1.png"></image>
+    </view>
+    <view class='page-list-content'>
+      <view class='list-title'>
+        <text>测试：当前标题测试当前标题测试当前标题测试</text>
+      </view>
+    </view>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

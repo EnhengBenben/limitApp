@@ -1,0 +1,33 @@
+/* pages/search/search.wxss */
+.search-box{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.search-box .input-box{
+  position: relative;
+  width:calc(100% - 60px);
+}
+.input-box image{
+  width:20px;
+height:20px;
+position:absolute;
+left:5px;
+top:5px;
+opacity: 0.6;
+}
+.input-box input{
+  padding-left:30px;
+  height:30px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  width: calc(100% - 30px);
+}
+.back{
+  width: 60px;
+  text-align: center;
+  color: #6dbdf8;
+  height:30px;
+  line-height:30px;
+}

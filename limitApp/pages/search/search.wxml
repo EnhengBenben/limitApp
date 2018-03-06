@@ -1,0 +1,11 @@
+<!--pages/search/search.wxml-->
+<view class='search-box'>
+ <view class='input-box'>
+  <image class='search-icon' src='../../images/search.png'/>
+  <input placeholder="请输入关键字" focus="{{true}}" confirm-type="search" bindconfirm="goSearch"/>
+ </view>
+ <navigator class='back' open-type="navigateBack" delta="-1">取消</navigator>
+</view>
+<view class='hot-word' wx:for="{{lists}}">
+  <view>{{item.keyWord}}</view>
+</view>

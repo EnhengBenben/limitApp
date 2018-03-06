@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <view class='nav navtop'>
+    <navigator class='user-icon' hover-class="none" url='../../pages/user/user'>
+      <image mode="aspectFit" src='../../images/user.png'/>
+    </navigator>
+      <view class='scroll-box'>
+        <scroll-view class='scroll scroll-x' style='height: 50px' scroll-x bindtap="changeTab">
+            <view data-tab="0" class="flex-item {{ _tab == 0? 'active': '' }}" style='margin-left: 0'>推荐</view>
+            <view data-tab="1" class="flex-item {{ _tab == 1? 'active': '' }}">银河系</view>
+            <view data-tab="2" class="flex-item {{ _tab == 2? 'active': '' }}">本地</view>
+            <view data-tab="3" class="flex-item {{ _tab == 3? 'active': '' }}">视频</view>
+            <view data-tab="4" class="flex-item {{ _tab == 4? 'active': '' }}">外太空</view>
+            <view data-tab="5" class="flex-item {{ _tab == 5? 'active': '' }}">外太空</view>
+            <view data-tab="6" class="flex-item {{ _tab == 6? 'active': '' }}">外太空</view>
+            <view data-tab="7" class="flex-item {{ _tab == 7? 'active': '' }}">外太空</view>
+        </scroll-view>
+      </view>
+      <navigator class='nav-search' hover-class="none" url='../../pages/search/search'>
+         <image mode="aspectFit" src='../../images/search.png'/>
+      </navigator>
+    </view>
+    <view class='scroll-y-box' scroll-y>
+    <scroll-view class='scroll-y' scroll-y lower-threshold="100"  bindscrolltolower="getMore" scroll-top="{{scrollTop}}">
+    <view class='city' wx:if="{{_tab == 2}}">当前定位城市：<text class='font'>{{city}}</text></view>
+      <view class='artical-1' wx:for="{{list}}">
+      <view class='artical-font'>
+        <text>测试标题测试标题测试标23卡就是打开题测试标题</text>
+        <view class='artical-info'>
+          <view class='info'>
+          <image style='margin-top: 0' mode="aspectFit" src='../../images/user.png'></image>
+          张三
+          </view>
+          <view class='info'>
+          {{index + 1}}评论
+          </view>
+          <view class='info'>
+          2017-02-03
+          </view>
+        </view>
+      </view>
+        <image mode='aspectFit' src='../../images/test1.png'/>
+      </view>
+      <view class='get-more'>
+        <block wx:if="!{{hidden}}">
+          <image mode src='../../images/loading.png'/>正在载入...
+        </block>
+      </view>
+    </scroll-view>
+    </view>
+</view>

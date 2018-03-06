@@ -1,0 +1,136 @@
+/**index.wxss**/
+.nav-search image{
+  margin-left: 10px;
+}
+
+.user-icon image, .nav-search image{
+  width: 25px; height: 25px;
+  margin-top: 13px;
+}
+.navtop{
+  display: flex;
+  height: 51px;
+  flex-direction: row;
+}
+.navtop .user-icon{
+  width: 40px;
+}
+.scroll-x{
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.nav-box{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+.scroll-box{
+  width: calc(100% - 80px);
+  overflow: hidden;
+  white-space: nowrap;
+}
+.scroll-x .flex-item{
+margin:0 10px;
+height:50px;
+line-height:50px;
+color: #000;
+font-weight: 400;
+font-size: 1.25rem;
+display: inline-block;
+}
+.scroll-x .active{
+  border-bottom: 4px solid #6dbdf8;
+  height: 46px;
+  color: #6dbdf8;
+}
+.nav-search{
+  width: 39px;
+  height: 50px;
+  border-left: 1px solid #f0f0f0;
+}
+.nav-search::before{
+  content: '';
+  height: 30px;
+  display: inline-block;
+  margin-top: 10px;
+  box-shadow: -1px 0 1px #f0f0f0;
+  border-left: 1pt solid #f0f0f0;
+}
+/* .nav-search .search-border{
+  margin-top: 7px;
+  height: 36px;
+  border-left: 1pt solid #f0f0f0;
+  box-shadow: -2px 0px 2px #999;
+  width: 0rpx;
+  margin-left: 0px
+} */
+.scroll-y-box{
+  height: calc(100vh - 51px);
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  
+}
+.scroll-y-box .scroll-y{
+  height: 100%;
+}
+.scroll-y-box .scroll-y .artical-1{
+  height: 70px;
+  border-bottom: 1rpx solid #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+}
+.artical-1 image{
+  width: 70px;
+  height: 50px;
+  margin-top: 15px;
+}
+.artical-1 .artical-font{
+  width: calc(100% - 70px)
+}
+.artical-font text{
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.2rem;
+}
+.artical-info{
+  display: flex;
+  flex-direction: row;
+}
+.artical-info .info{
+  font-size: 0.8rem;
+  color: #999;
+  margin-right: 10px;
+}
+.artical-info .info image{
+  width: 10px;
+  height: 10px;
+  
+}
+.get-more{
+  text-align: center;
+  padding: 10px 0;
+}
+.get-more image{
+  width: 15px;
+  height: 15px;
+  animation: rotate 1s linear 0s infinite;
+}
+@keyframes rotate{
+  from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+.city{
+  text-align:center;
+  padding:5px 0;
+  border-bottom:1px solid #f0f0f0;
+}
+.city .font{
+  display: inline;
+  color: #ff587d;
+}

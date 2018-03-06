@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/search/search"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#6dbdf8",
+    "navigationBarTitleText": "财税新空间",
+    "navigationBarTextStyle":"white"
+  }
+}
